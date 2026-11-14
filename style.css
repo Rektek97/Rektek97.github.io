@@ -1,0 +1,31 @@
+:root {
+  --bg: #fbf6ee;
+  --ink: #3a2e25;
+  --muted: #7a6a5c;
+  --accent: #c0603a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1f1a16;
+    --ink: #efe6da;
+    --muted: #b3a493;
+    --accent: #e08a62;
+  }
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 Georgia, "Times New Roman", serif;
+}
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem 16px 4rem;
+}
+h1 { font-size: 1.8rem; line-height: 1.25; margin-bottom: 0.2rem; }
+h2 { font-size: 1.15rem; margin-top: 2rem; }
+a { color: var(--accent); }
+.date, .lang { color: var(--muted); font-size: 0.95rem; }
+.todo { color: var(--muted); font-style: italic; }
+hr { border: 0; border-top: 1px solid var(--muted); opacity: 0.4; margin: 3rem 0; }
